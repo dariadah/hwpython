@@ -1,0 +1,89 @@
+a = int(input('Введите 1-е целое число >>> '))
+vesh_a = float(a)
+logic_a = bool(a)
+strk_a = str(a)
+
+print('Целое представление: {} Вещественное: {} Логическое: {} Строка: "{}"'.format(a, vesh_a, logic_a, strk_a))
+
+b = int(input('Введите 2-е целое число >>> '))
+vesh_b = float(b)
+logic_b = bool(b)
+strk_b = str(b)
+print('Целое представление: {} Вещественное: {} Логическое: {} Строка: "{}"'.format(b, vesh_b, logic_b, strk_b))
+
+print('------')
+
+res1 = strk_a + strk_b
+# res2 = strk_b + vesh_a
+# res3 = strk_b + logic_a
+# res4 = strk_b + a
+
+res5 = vesh_a + vesh_b
+res6 = vesh_a + logic_b
+res7 = vesh_a + b
+res8= vesh_b + logic_a
+res9 = vesh_b + a
+res10 = logic_a + logic_b
+res11 = logic_a + b
+res12 = logic_b + a
+res13 = a + b
+
+print('Операции прибавления: ')
+print('Строка "{}" + Строка "{}" = {}'.format(strk_a, strk_b, res1))
+print('Операции Строка + Вещественное/Логическое/Целое невозможно выполнить в данной комбинации')
+
+print()
+
+print('Вещественное 1: {} + Вещественное: {} = {}'.format(vesh_a, vesh_b, res5))
+print('Вещественное 1: {} + Логическое 2: {} = {}'.format(vesh_a, logic_b, res6))
+print('Вещественное 1: {} + Целое 2: {} = {}'.format(vesh_a, b, res7))
+print('Вещественное 2: {} + Логическое 1: {} = {}'.format(vesh_b, logic_a, res8))
+print('Вещественное 2: {} + Целое 1: {} = {}'.format(vesh_b, a, res9))
+
+print()
+
+print('Логическое 1: {} + Логическое 2: {} = {}'.format(logic_a, logic_b, res10))
+print('Логическое 2: {} + Целое 2: {} = {}'.format(logic_a, b, res11))
+print('Логическое 2: {} + Целое 1: {} = {}'.format(logic_b, a, res12))
+print('Целое 1: {} + Целое 2: {} = {}'.format(a, b, res13))
+
+print()
+
+
+#res_1 = strk_a * strk_b
+#res_2 = strk_b * vesh_a
+res_3 = strk_b * logic_a
+res_4 = strk_b * a
+res_5 = vesh_a * vesh_b
+res_6 = vesh_a * logic_b
+res_7 = vesh_a * b
+res_8 = vesh_b * logic_a
+res_9 = vesh_b * a
+res_10 = logic_a * logic_b
+res_11 = logic_a * b
+res_12 = logic_b * a
+res_13 = a * b
+
+
+
+print('Операции умножения:')
+print('Операции Строка * Строка и Строка * Вещественное невозможно выполнить в данной комбинации.')
+print()
+
+print('Строка 2: {} * Логическое 1: {} = {}'.format(strk_b, logic_a, res_3))
+print('Строка 2: {} * Целое 1: {} = {}'.format(strk_b, a, res_4))
+print('Вещественное 1: {} * Вещественное: {} = {}'.format(vesh_a, vesh_b, res_5))
+print('Вещественное 1: {} * Логическое 2: {} = {}'.format(vesh_a, logic_b, res_6))
+print('Вещественное 1: {} * Целое 2: {} = {}'.format(vesh_a, b, res_7))
+print('Вещественное 2: {} * Логическое 1: {} = {}'.format(vesh_b, logic_a, res_8))
+print('Вещественное 2: {} * Целое 1: {} = {}'.format(vesh_b, a, res_9))
+
+print()
+
+print('Логическое 1: {} * Логическое 2: {} = {}'.format(logic_a, logic_b, res_10))
+print('Логическое 2: {} * Целое 2: {} = {}'.format(logic_a, b, res_11))
+print('Логическое 2: {} * Целое 1: {} = {}'.format(logic_b, a, res_12))
+print('Целое 1: {} * Целое 2: {} = {}'.format(a, b, res_13))
+
+print()
+
