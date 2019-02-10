@@ -1,0 +1,32 @@
+name = input('Введите имя и фамилию ')
+
+print('Добрый день,' + name)
+
+day_of_birth = int(input('Введите день своего рождения '))
+month_of_birth = int(input('Введите месяц своего рождения '))
+year_of_birth = int(input('Введите год своего рождения '))
+
+#Вывести количество прожитых дней, месяцев, лет до даты начала курса 31.01.2019
+# без учёта високосных лет и считая, что среднее количество дней в месяце = 30.
+
+DATE_D = 31
+DATE_M = 2
+DATE_Y = 2019
+
+years_res = (DATE_Y - year_of_birth) - 1
+years_res_text = 'Вы прожили лет'
+print(years_res_text, years_res)
+
+days_res = (30*12 + DATE_D) * years_res
+days_res_text = 'Вы прожили дней'
+print(days_res_text, days_res)
+
+
+#days_res = month_res*30
+# days_res_text = 'Вы прожили дней'
+# print(days_res_text, days_res)
+
+month_res = years_res*12
+month_res_text = 'Вы прожили месяцев'
+print(month_res_text, month_res)
+
